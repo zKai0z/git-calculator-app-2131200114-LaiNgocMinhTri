@@ -19,6 +19,8 @@
   },
   "build": {
     "appId": "com.example.calculator",
+    "productName": "CalculatorAppPro",
+    "publish": "never",
     "files": [
       "src/**/*",
       "assets/**/*",

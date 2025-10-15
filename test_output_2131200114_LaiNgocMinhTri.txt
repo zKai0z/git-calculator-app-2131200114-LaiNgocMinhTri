@@ -1,0 +1,13 @@
+PASS tests/calculator.test.js
+  compute
+    √ adds (2 ms)
+    √ subs
+    √ multiplies
+    √ divides
+    √ divide by zero
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        0.277 s, estimated 6 s
+Ran all test suites.

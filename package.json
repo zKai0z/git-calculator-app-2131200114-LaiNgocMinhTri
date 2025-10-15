@@ -1,0 +1,37 @@
+{
+  "name": "calculator-app-pro",
+  "version": "1.0.0",
+  "description": "Electron calculator app (organized professional structure)",
+  "main": "src/main/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "test": "jest",
+    "lint": "eslint src --ext .js",
+    "build": "electron-builder -mwl"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  },
+  "build": {
+    "appId": "com.example.calculator",
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

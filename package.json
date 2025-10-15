@@ -20,7 +20,7 @@
   "build": {
     "appId": "com.example.calculator",
     "productName": "CalculatorAppPro",
-    "publish": "never",
+    "publish": null,
     "files": [
       "src/**/*",
       "assets/**/*",

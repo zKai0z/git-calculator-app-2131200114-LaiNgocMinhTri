@@ -28,10 +28,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Install dependencies
         run: npm install
 
       - name: Build application
+        shell: bash   # ✅ Force Bash shell so [[ ]] works everywhere
         run: |
           if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
             npm run build -- -l

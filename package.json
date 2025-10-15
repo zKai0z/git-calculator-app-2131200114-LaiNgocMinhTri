@@ -9,7 +9,7 @@
     "dev": "electron .",
     "test": "jest",
     "lint": "eslint src --ext .js",
-    "build": "electron-builder -mwl"
+    "build": "electron-builder"
   },
   "devDependencies": {
     "electron": "^31.7.7",
